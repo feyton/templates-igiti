@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Oswald&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style/registration.css" />
+    <link rel="stylesheet" href="style/registration.css" type="text/css">
+    <link rel="icon" type="image/gif" href="images/profile.png" />
+    <title>Igiti Corp >Account</title>
+</head>
+
+<body>
+    <a href="index.html"><img src="images/fixed-logo.png" alt="logo" width="275" height="60" class="fixed-logo"></a>
+
+    <div class="hero">
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="register()">Register</button>
+            </div>
+            <div class="social-icons">
+                <img src="images/facebook.svg" alt="">
+                <img src="images/search.svg" alt="">
+            </div>
+            <form id="login" action="" method="post" class="input-group">
+                <input type="text" class="input-field" placeholder="Email" required>
+                <input type="text" class="input-field" placeholder="Password" required>
+                <input type="checkbox" class="chech-box"><span>Remember Password</span>
+                <button class="submit-btn" type="submit">Log In</button>
+            </form>
+            <form id="register" action="" method="post" class="input-group">
+                <input type="text" class="input-field" placeholder="Username" required>
+                <input type="email" class="input-field" placeholder="Email" required>
+                <input type="password" class="input-field" placeholder="Password" required>
+                <input type="password" class="input-field" placeholder="Comfirm Password" required>
+                <input type="checkbox" class="chech-box"><span>I Agree to <a href="terms.html">Terms and Conditions</a></span>
+                <button class="submit-btn" type="submit">Register</button>
+
+            </form>
+            <div class="message-box">Message</div>
+
+    </div>
+
+</div>
+
+<script>
+    var x = document.getElementById("login");
+    var y = document.getElementById("register");
+    var z = document.getElementById("btn");
+
+    function register() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px"
+    }
+    function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0px"
+    }
+
+</script>
+</body>
+
+</html>

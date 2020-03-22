@@ -1,0 +1,288 @@
+/* *****************
+POST-SLIDER
+*******************/
+
+.post-wrapper {
+    width: 85%;
+    height: 350px;
+    margin: 0px auto;
+    padding: 10px 0px 10px 0px;
+    overflow: hidden;
+}
+.post {
+    display: inline-block;
+    width: 300px;
+    height: 330px;
+    margin: 0px 10px;
+    background: rgb(221, 220, 220);
+    border-radius: 6px;
+    box-shadow: 1rem 1rem 1rem -1rem rgb(90, 89, 89);
+    overflow: hidden;
+}
+.slider-title {
+    text-align: center;
+    margin: 30px auto;
+    font-family: 'Oswald', Georgia, 'Times New Roman', Times, serif;
+}
+.post-slider {
+    position: relative;
+}
+.next {
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 2em;
+    color: cyan;
+    cursor: pointer;
+    z-index: 5;
+}
+.prev {
+    position: absolute;
+    top: 50%;
+    left: 30px;
+    font-size: 2em;
+    color: cyan;
+    cursor: pointer;
+    z-index: 7;
+}
+.slider-image {
+    width: 100%;
+    height: 200px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+.post-info {
+    height: 130px;
+    background: #fff;
+    padding: 0px 5px;
+
+}
+h4 {
+    margin: 5px;
+}
+
+/* ************************
+TRENDING POSTS
+**************************/
+.content {
+    width: 100%;
+    margin: 30px auto 30px;
+}
+.main-content {
+    width: 70%;
+    float: left;
+}
+
+.main-content .trending-post-title {
+    margin: 10px auto;
+    text-align: center;
+}
+
+.main-content .trending-post {
+    width: 95%;
+    height: 270px;
+    margin: 10px auto;
+    border-radius: 7px;
+    background: #fff;
+    position: relative;
+}
+.main-content img {
+    width: 40%;
+    height: 90%;
+    float: left;
+    border-radius: 10px;
+}
+
+.main-content .post-preview {
+    width: 60%;
+    float: right;
+    padding: 10px;
+}
+.main-content .post-preview p {
+    line-height: 1.5em;
+    font-size: 1.03em;
+    color: #444;
+}
+.main-content .post-preview h2 a {
+    color: rgb(11, 55, 97);
+    font-weight: 300;
+    transition: 0.5s;
+}
+.main-content .post-preview h2 a:hover {
+    color: rgb(0, 112, 192);
+    transition: 0.5s;
+}
+.main-content span {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.main-content .readmore {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.sidebar {
+    width: 30%;
+    float: left;
+    height: auto;
+}
+
+/* ******************
+SIDEBAR
+**********************/
+.content .sidebar .section {
+    background: white;
+    padding: 20px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.content .sidebar .section.search {
+    margin-top: 10px;
+
+}
+.content .sidebar .section.topics ul {
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+    border-top: 2px solid#444;
+}
+.content .sidebar .section.topics a {
+    display: block;
+    padding: 10px 10px;
+    border-bottom: 2px solid#444;
+    color:  rgb(11, 55, 97);
+    font-family: 'Martel';
+    transition: 0.5s;
+}
+.content .sidebar .section.topics a:hover {
+    padding-left: 20px;
+    transition: 0.5s;
+    color: rgb(0, 112, 192);
+}
+
+.content .sidebar .section .section-title {
+    font-family: 'Josefin Slab';
+    margin: 10px;
+}
+/*********************
+ SINGLE 
+ *********************/
+
+.single {
+    background: white;
+    margin: 0px;
+}
+.trending-post-title.single {
+    width: 99%;
+    margin-bottom: 0px;
+    float: left;
+    margin-top: 10px;
+}
+.post-preview.single {
+    width: 99%;
+    background: white;
+    padding-right: 10px;
+    float: left;
+}
+.sidebar.single {
+    padding: 10px;
+    height: auto;
+    background: whitesmoke;
+
+}
+.sidebar .section.popular .post-popular {
+    border-top: 1px solid #0f418d;
+    margin-top: 10px;
+    padding-top: 10px;
+}
+
+.sidebar .post-popular img {
+    height: 60px;
+    width: 60px;
+    border-radius: 10px;
+    float: left;
+    margin-right: 5px;
+}
+.sidebar .post-popular a {
+    color: rgb(11, 55, 97);
+    transition: 0.5s;
+}
+.sidebar .post-popular a:hover {
+    color: rgb(0, 112, 192);
+    transition: 0.5s;
+}
+
+.sidebar .post-popular h4 {
+    font-size: 1.1em;
+}
+/* *******************
+MEDIA QUERIES
+*********************/
+
+
+@media only screen and (max-width: 700px) {
+    .next {
+        right: 5px;
+    }
+    .prev {
+        left: 5px;
+    }
+    .content {
+        margin: 10px 5px;
+        width: 100%;
+        height: auto;
+    }
+    .main-content {
+        width: 100%;
+    }
+
+    .main-content img {
+        width: 30%;
+        height: 70%;
+        margin: auto;
+    }
+     .main-content .post-preview {
+         width: 70%;
+     }
+     .sidebar {
+         width: 100%;
+         padding: 10px;
+         height: auto;
+     }
+     .main-content .post-preview.single {
+         width: 99%;
+         border-radius: 5px;
+     }
+}
+
+@media only screen and (max-width: 500px) {
+    .main-content .trending-post {
+        height: auto;
+    }
+    .main-content .trending-post img {
+        width: 100%;
+    }
+    .main-content .post-preview {
+        width: 100%;
+    }
+    .main-content .readmore {
+        position: static;
+        width: 80%;
+        display: block;
+        margin: auto;
+    }
+
+}
+
+@media only screen and (max-width: 350px) {
+    .main-content .readmore {
+        width: 100%;
+    }
+    .next {
+        right: 1px;
+    }
+    .prev {
+        left: 1px;
+    }
+}
